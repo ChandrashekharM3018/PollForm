@@ -22,8 +22,8 @@ $url = 'https://i.postimg.cc/Y0d3QZdQ/imageonline-co-overlayed-image-2.png';
                 $pollid = 'poll';
 		$connect = mysqli_connect('localhost', 'root','','poll');
 		$query = "SELECT * FROM polls WHERE pollid='$pollid'";
-		$q = mysqli_query($connect, $query);
-                while($row = mysqli_fetch_array($q)) 
+		$q1 = mysqli_query($connect, $query);
+                while($row = mysqli_fetch_array($q1)) 
                 {
                     $id = $row[0];
 			$pollid = $row[1];
